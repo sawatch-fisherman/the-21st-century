@@ -2,6 +2,9 @@
 25/02/22
 
 # 概要
+本リポジトリ作成時である初回構築時の作成手順  
+※リポジトリをcloneしてきた場合は、local-setup.mdを参照
+
 docker + laravelの環境を作成する  
 dockerとlaravelのフォルダは分離する  
 親フォルダ  
