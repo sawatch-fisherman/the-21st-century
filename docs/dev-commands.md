@@ -8,6 +8,7 @@ docker, Laravelコマンドのチートシート
 | コンテナ起動 | `docker compose up -d` |
 | コンテナ停止 | `docker compose stop` |
 | コンテナ(Laravel)に入る | `docker exec -it the21st_app bash` |
+| コンテナ(Laravel)に入る(ユーザー:www-data) | `docker exec -u www-data -it the21st_app bash` |
 
 # Laravel(基本)
 | 項目 | コマンド |
@@ -24,5 +25,12 @@ docker, Laravelコマンドのチートシート
 |:---:|:---:|
 | コード解析 | `vendor/bin/phpstan analyse --memory-limit=1G` |
 | コード整形 | `vendor/bin/pint` |
+| ログ出力   | `php artisan pail` |
 | テスト実行 | `php artisan test` |
 | テスト実行 | `./vendor/bin/phpunit tests/Feature/PlaygroundApiTest.php` |
+
+# Laravel(データベース)
+| 項目 | コマンド |
+|:---:|:---:|
+| マイグレーションを実行 | `php artisan migrate` |
+| ShopSeederを実行（飲食店のサンプルデータを作成） | `php artisan db:seed --class=ShopSeeder` |

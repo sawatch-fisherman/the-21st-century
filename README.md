@@ -29,6 +29,20 @@ The 21st Century は、Laravelを使用して構築されたWebアプリケー�
 <!-- - APIエンドポイント一覧は `docs/api.md` を参照 -->
 OpenAIドキュメント:http://localhost:8088/api/documentation  
 
+## サンプルデータベースのテーマ
+本プロジェクトのサンプルデータベースは、飲食店（レストラン）をテーマにしています。
+
+**テーブル構成：**
+- **shops（店舗）**: レストランなどの飲食店情報
+- **menus（メニュー）**: 各店舗のメニュー情報
+- **categories（カテゴリー）**: メニューのカテゴリ情報（ドリンク、フード、デザートなど）
+
+- リレーション:
+  - 1つの店舗（shops）は複数のメニュー（menus）を持つ（1対多）
+  - 1つのメニュー（menus）は1つのカテゴリー（categories）に属する（多対1）
+
+このテーマを使用して、N+1問題の検証やその他の学習目的に活用しています。
+
 ## 開発ルール
 - ブランチ運用ルール
   - `main`: 本番用
@@ -45,6 +59,10 @@ OpenAIドキュメント:http://localhost:8088/api/documentation
   - `[refactor]` コード整理（機能変更なし）
   - `[test]` テスト追加・修正
   - `[chore]` メンテナンス（ライブラリ更新など）
+
+
+
+
 ## ライセンス
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
