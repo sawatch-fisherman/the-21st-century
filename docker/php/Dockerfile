@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     libxml2-dev \
-    && docker-php-ext-install pdo_mysql gd xml
+    && docker-php-ext-install pdo_mysql gd xml pcntl
 
 # Xdebugのインストール
 RUN pecl install xdebug
