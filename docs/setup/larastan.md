@@ -1,5 +1,6 @@
 # このファイルについて
 LaravelにLarastan（PHPStan）を導入する手順・設置について記述する
+旧パッケージ `nunomaduro/larastan` は廃止されているため、**後継の `larastan/larastan` を使用します。**
 
 
 # 手順
@@ -7,7 +8,7 @@ LaravelにLarastan（PHPStan）を導入する手順・設置について記述�
 
 ##  Larastan（PHPStan） インストール
 Docker 内の app コンテナに入って ライブラリをインストールする  
-`composer require --dev nunomaduro/larastan`  
+`ccomposer require --dev larastan/larastan`  
 
 ## 設定ファイル（phpstan.neon）を作成
 プロジェクトのルートディレクトリ（app/）に phpstan.neon というファイルを作成し、以下のように記述する
@@ -15,7 +16,7 @@ Docker 内の app コンテナに入って ライブラリをインストール�
 ### phpstan.neonの記述内容
 ```
 includes:
-    - vendor/nunomaduro/larastan/extension.neon
+    - vendor/composer require --dev larastan/larastan/larastan/extension.neon
 
 parameters:
     level: 7
