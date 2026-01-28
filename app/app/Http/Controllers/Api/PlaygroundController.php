@@ -7,9 +7,8 @@ use App\Http\Responses\TotalResponse;
 use Illuminate\Http\JsonResponse;
 
 /**
- * @OA\Info(
- *     title="Playground API",
- *     version="1.0.0",
+ * @OA\Tag(
+ *     name="Playground",
  *     description="自由な実験的なコードを書くためのコントローラ"
  * )
  */
@@ -21,10 +20,13 @@ class PlaygroundController extends Controller
      *     summary="サンプルAPI",
      *     description="これはお試し用のサンプルAPIです。",
      *     tags={"Playground"},
+     *
      *     @OA\Response(
      *         response=200,
      *         description="成功時のレスポンス",
+     *
      *         @OA\JsonContent(
+     *
      *             @OA\Property(property="message", type="string", example="This is a sample API response.")
      *         )
      *     )

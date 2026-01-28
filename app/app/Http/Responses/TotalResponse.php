@@ -11,7 +11,7 @@ class TotalResponse extends JsonResponse
      *
      * @param  int  $total  合計値
      * @param  int  $status  HTTPステータスコード
-     * @param  array  $headers  HTTPヘッダー
+     * @param  array<string, string|string[]>  $headers  HTTPヘッダー
      * @param  int  $options  JSONエンコードオプション
      */
     public function __construct(int $total, int $status = 200, array $headers = [], int $options = 0)

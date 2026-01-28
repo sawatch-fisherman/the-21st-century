@@ -23,10 +23,10 @@ return [
      * 特定のモデル / リレーションを検知対象から除外したい場合に使います。
      */
     'except' => [
-        //Author::class => [
+        // Author::class => [
         //    Post::class,
         //    'posts',
-        //]
+        // ]
     ],
 
     /*
@@ -67,5 +67,5 @@ return [
     'output' => [
         // \BeyondCode\QueryDetector\Outputs\Alert::class,
         \BeyondCode\QueryDetector\Outputs\Log::class,   // logに出力
-    ]
+    ],
 ];

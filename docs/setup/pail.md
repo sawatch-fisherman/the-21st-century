@@ -22,4 +22,9 @@ Docker 内の app コンテナに入って ライブラリをインストール�
 
 パッケージは自動的に登録されるため、追加の設定は不要。
 
+## 実行
+`docker exec -u www-data -it the21st_app bash`  
+`php artisan pail`  
+
+
 完了。
