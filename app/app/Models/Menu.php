@@ -4,8 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Category;
-use App\Models\Shop;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
@@ -36,8 +34,7 @@ class Menu extends Model
     /**
      * メニューに紐づく店舗を取得
      *
-     * @return BelongsTo<Shop, static>
-     * @phpstan-ignore-next-line
+     * @phpstan-return BelongsTo<Shop, $this>
      */
     public function shop(): BelongsTo
     {
@@ -47,8 +44,7 @@ class Menu extends Model
     /**
      * メニューに紐づくカテゴリーを取得
      *
-     * @return BelongsTo<Category, static>
-     * @phpstan-ignore-next-line
+     * @phpstan-return BelongsTo<Category, $this>
      */
     public function category(): BelongsTo
     {

@@ -16,7 +16,7 @@ Docker 内の app コンテナに入って ライブラリをインストール�
 ### phpstan.neonの記述内容
 ```
 includes:
-    - vendor/composer require --dev larastan/larastan/larastan/extension.neon
+    - vendor/larastan/larastan/extension.neon
 
 parameters:
     level: 7

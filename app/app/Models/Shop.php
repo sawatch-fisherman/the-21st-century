@@ -31,8 +31,7 @@ class Shop extends Model
     /**
      * 店舗に紐づくメニューを取得
      *
-     * @return HasMany<Menu, static>
-     * @phpstan-ignore-next-line
+     * @phpstan-return HasMany<Menu, $this>
      */
     public function menus(): HasMany
     {
