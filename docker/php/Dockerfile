@@ -1,5 +1,5 @@
-# PHP 8.2 以上を指定（Laravel 11 に対応）
-FROM php:8.2-fpm
+# PHP 8.4 以上を指定（Laravel 11 に対応）
+FROM php:8.4-fpm
 
 # 必要なパッケージをインストール
 RUN apt-get update && apt-get install -y \

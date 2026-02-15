@@ -37,7 +37,7 @@ dockerとlaravelのフォルダは分離する
     - 修正後：fastcgi_pass the21st_app:9000;
 
 ### Docker をビルド・起動
-cd docker  
+`cd docker`
 `docker-compose up -d --build`  
 
 ##  Laravel インストール
@@ -57,9 +57,9 @@ Laravel Framework 11.43.2
 
 `php -v`
 
-PHP 8.2.27 (cli) (built: Feb  4 2025 04:26:00) (NTS)  
-Copyright (c) The PHP Group  
-Zend Engine v4.2.27, Copyright (c) Zend Technologies
+PHP 8.4.18 (cli) (built: Feb 13 2026 18:37:53) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.4.18, Copyright (c) Zend Technologies
 
 ### .envのコピーとAPP_KEYの生成
 
