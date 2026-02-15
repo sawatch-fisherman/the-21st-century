@@ -7,7 +7,7 @@ The 21st Century は、Laravelを使用して構築されたWebアプリケー�
 学習した内容のサンプルコードを記述しています。
 
 ## 動作環境
-- PHP PHP 8.2.28
+- PHP 8.4.18
 - Laravel Framework 11.43.2
 - MySQL 8.4.4
 - Docker

@@ -19,6 +19,7 @@ docker, Laravelコマンドのチートシート
 | Bladeテンプレートのキャッシュ削除 | `php artisan view:clear` |
 | アプリケーションキャッシュ削除 | `php artisan cache:clear` |
 | すべてのキャッシュをまとめて削除 | `php artisan optimize:clear` |
+| キャッシュの再作成 | `composer dump-autoload` |
 
 # Laravel(拡張ライブラリ)
 | 項目 | コマンド |
