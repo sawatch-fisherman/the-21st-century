@@ -8,7 +8,7 @@ The 21st Century は、Laravelを使用して構築されたWebアプリケー�
 
 ## 動作環境
 - PHP 8.4.18
-- Laravel Framework 11.43.2
+- Laravel Framework 12.51.0
 - MySQL 8.4.4
 - Docker
 - ベース：https://github.com/sawatch-fisherman/the-21st-century.git　を元に作成
