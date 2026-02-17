@@ -41,19 +41,19 @@ dockerとlaravelのフォルダは分離する
 `docker-compose up -d --build`  
 
 ##  Laravel インストール
-Docker 内の app コンテナに入って Laravel 11 をインストール
+Docker 内の app コンテナに入って Laravel 12 をインストール
 
 ### コンテナに入る
 `docker exec -it コンテナ名 bash`  
 ┗例:docker exec -it the21st_app bash
 
-### Laravel 11 をインストール
-composer create-project laravel/laravel . "11.*"
+### Laravel 12 をインストール
+composer create-project laravel/laravel . "12.*"
 
 ### PHPとLaravelのバージョン確認
 `php artisan --version`
 
-Laravel Framework 11.43.2
+Laravel Framework 12.51.0
 
 `php -v`
 
